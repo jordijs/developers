@@ -20,13 +20,10 @@ class NewController extends Controller
             'timeStart' => $_POST["timeStart"],
             'timeEnd' => $_POST["timeEnd"]
             );
-            echo "The data sent in the form is: <br>";
-            //var_dump($taskData);
-            echo " <br>End of the data sent in the form <br> <br>";
-            //Pas 2: executar el model que ens retornarà la tasca passant-li les dades que volem
+
+            //Pas 2: executar el model que posarà la tasca a la bdd passant-li les dades que volem
             $tasks->addTask($taskData);
             
-                    
             //Pas 3: Retornar a la vista index/
             return header("Location: ../web/" );
         }

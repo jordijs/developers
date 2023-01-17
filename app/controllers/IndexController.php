@@ -13,10 +13,8 @@ class IndexController extends Controller
         $allTasks = $tasks->getTasks();
         
         //Pas 2: Passo tasques a la vista
-        
         $this->view->allTasks = $allTasks;
         
-        //Pas 3: Invoco la vista
     }
 
     

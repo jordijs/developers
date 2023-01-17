@@ -19,9 +19,7 @@ class ViewController extends Controller
 
         //Pas 3: passar la informació a la vista
         $this->view->taskToView = $taskToView;
-
     }
-
     
 }
 

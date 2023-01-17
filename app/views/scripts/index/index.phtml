@@ -1,12 +1,11 @@
 <table class="col-span-12 shadow-lg bg-white" >
-
-<?php 
-$allTasks = ($this->allTasks);
-foreach ($allTasks as $task): ?>
-
+  <?php 
+  $allTasks = ($this->allTasks);
+  foreach ($allTasks as $task): 
+  ?>
   <tr class="grid grid-cols-12 border-b">
     <td class="col-span-9 md:col-span-10 p-5">
-    <?php echo $task['taskName'] ?>
+      <?php echo $task['taskName'] ?>
     </td>
     <td class="col-span-3 md:col-span-2 grid grid-cols-3 gap-2 sm:gap-4 p-2 place-items-center">
         <a href="view?id=<?php echo $task['id'] ?>"><img src="./images/view.png" class="w-15 md:w-10"></a>
@@ -14,9 +13,9 @@ foreach ($allTasks as $task): ?>
         <a href="delete?id=<?php echo $task['id'] ?>"><img src="./images/delete.png" class="w-15 md:w-10"></a>
     </td>
   </tr>
-
-
-  <?php endforeach;; ?>
+  <?php
+  endforeach; 
+  ?>
   <tr class="grid grid-cols-12 border-b">
     <td class="col-span-9 md:col-span-10 p-5">
     <a href="new">

@@ -29,7 +29,6 @@ class TaskModel extends Model
         
     }
 
-
     public function addTask($taskData){
 
         //1. Inicialitzem bdd
@@ -74,7 +73,6 @@ class TaskModel extends Model
 
     public function updateTask($data) {
     
-    
         $this->tasks = json_decode($this->database, true);
         $tasks = $this->tasks;
 
@@ -91,7 +89,7 @@ class TaskModel extends Model
         }
         
         file_put_contents(ROOT_PATH . '/db/tasks.json', json_encode($tasks));
-
+        
         }
 
     public function deleteTask($taskId) {

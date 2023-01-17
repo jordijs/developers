@@ -11,7 +11,6 @@ class EditController extends Controller
         //Pas 1: Inicialitzar objecte tasca
         $tasks = new TaskModel;
         
-
         //Pas 2: Obtenir el id de la tasca
         $taskId = $_GET["id"];
         
