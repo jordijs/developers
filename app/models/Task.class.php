@@ -65,17 +65,20 @@ class TaskModel extends Model
         $this->tasks = json_decode($this->database, true);
         $tasks = $this->tasks;
 
-        /*foreach ($tasks as $i => $task) {
-            if ($task['id'] == $id) {
+        foreach ($data as $i => $dataElement ) {
+           if ($i == "id") {
+            $dataId = $dataElement;
+           }
+        }
+
+        foreach ($tasks as $i => $task) {
+            if ($task['id'] == $dataId) {
                 $tasks[$i] =  $data;
             }
         }
-        */
+        
         file_put_contents(ROOT_PATH . '/db/tasks.json', json_encode($tasks));
-        //var_dump($tasks);
-        //utJson($users);
 
-        //return $updateUser;
 }
 }
 

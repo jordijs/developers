@@ -20,7 +20,6 @@ class EditController extends Controller
 
         //Pas 4: passar la informació a la vista
         $this->view->taskToEdit = $taskToEdit;
-        var_dump($taskId);
 
         //Pas 5: Passar les noves dades al model perquè les posi a la base de dades
         if (!empty($_POST)) {
@@ -35,7 +34,7 @@ class EditController extends Controller
             var_dump($data,$taskId);
             $tasks->updateTask($data);
 
-        //return header("Location: ../web/" );
+        return header("Location: ../web/" );
         }
     }
 
