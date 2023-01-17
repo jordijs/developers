@@ -28,7 +28,7 @@ class NewController extends Controller
             
                     
             //Pas 3: Retornar a la vista index/
-            //return header("Location: ../web/" );
+            return header("Location: ../web/" );
         }
         
     }
