@@ -16,7 +16,11 @@ $routes = array(
 	'/index' => 'index#index',
 	'/' => 'index#index',
 	'/view' => 'view#view',
-	'/new' => 'new#new'
+	'/new' => 'new#new',
+	'/add' => 'new#add',
+	'/edit' => 'edit#edit',
+	'/submit' => 'edit#submit',
+	'/delete' => 'delete#delete'
 );
 
 ?>

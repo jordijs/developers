@@ -16,21 +16,8 @@ class ViewController extends Controller
         
         //Pas 2: executar el model que ens retornarà la tasca passant-li quina tasca volem
         $taskToView = $tasks->getTaskById($taskId);
-        //Pas 2: 
 
-
-        /*$tasks = new Task;
-        
-        $allTasks = $tasks->getTasks();
-        $taskId = $allTasks->$_GET['id'];
-
-        $taskById = $tasks->getTaskById($taskId);
-        echo $taskById;*/
-        //Pas 2: Paso tasques a la vista
-        
-        
-        //Pas 3: Invoco la vista
-
+        //Pas 3: passar la informació a la vista
         $this->view->taskToView = $taskToView;
 
     }
