@@ -13,7 +13,7 @@ class DeleteController extends Controller
 
         //Pas 2: Obtenir el id de la tasca
         $taskId = $_GET["id"];
-        
+       
         //Pas 3: executar el model que esborrarà la tasca de la base de dades
         $tasks->deleteTask($taskId);
 
