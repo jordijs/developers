@@ -21,7 +21,7 @@ class NewController extends Controller
             'timeEnd' => $_POST["timeEnd"]
             );
             echo "The data sent in the form is: <br>";
-            var_dump($taskData);
+            //var_dump($taskData);
             echo " <br>End of the data sent in the form <br> <br>";
             //Pas 2: executar el model que ens retornarà la tasca passant-li les dades que volem
             $tasks->addTask($taskData);

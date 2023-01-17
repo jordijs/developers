@@ -57,15 +57,15 @@ class TaskModel extends Model
         //4. Creem array que sumi id i dades.
         $jointArrayData = $newIdArray + $taskData;
 
-         echo "The data to be introduced in database by model is: <br><br>";
-            var_dump($jointArrayData);
+         //echo "The data to be introduced in database by model is: <br><br>";
+            //var_dump($jointArrayData);
 
 
         //5. Sumem el nostre element a l'array de bdd
         array_push($tasks, $jointArrayData);
 
-        echo "The final data to be introduced to json is: <br><br>";
-        var_dump($tasks);
+        //echo "The final data to be introduced to json is: <br><br>";
+        //var_dump($tasks);
 
         //5. Introduim les dades al JSON
         file_put_contents(ROOT_PATH . '/db/tasks.json', json_encode($tasks));
