@@ -92,7 +92,26 @@ class TaskModel extends Model
         
         file_put_contents(ROOT_PATH . '/db/tasks.json', json_encode($tasks));
 
-}
+        }
+
+    public function deleteTask($taskId) {
+
+         //1. Inicialitzem bdd
+         $this->tasks = json_decode($this->database, true);
+         $tasks = $this->tasks;
+
+         //2. Busquem en bbdd el element que tingui un valor id igual que el id que ens han passat
+        foreach ($tasks as $i => $task) {
+    
+            if ($task['id'] == $taskId) {
+                //esborrem aquell element de l'array del qual formi part
+                unset($tasks[$i]);
+            }
+        }
+         //3. Introduïm en bdd l'array actualitzat
+         file_put_contents(ROOT_PATH . '/db/tasks.json', json_encode($tasks));
+
+    }
 }
 
 ?>
