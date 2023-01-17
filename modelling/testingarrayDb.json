@@ -128,3 +128,22 @@ array(5) {
 
 
 
+array(6) {
+    [
+        0
+    ]=> array(1) {
+        [
+            "id"
+        ]=> int(6)
+    } [
+        "taskName"
+    ]=> string(5) "fefes"[
+        "user"
+    ]=> string(6) "fdsgfs"[
+        "status"
+    ]=> string(9) "Completat"[
+        "timeStart"
+    ]=> string(10) "2023-01-18"[
+        "timeEnd"
+    ]=> string(10) "2023-01-19"
+}
