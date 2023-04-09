@@ -1,4 +1,9 @@
-# PHP initial Project
+# About
+Practical project to get used to working with other people's code. With a few given instructions, I had to create an app to manage to-do tasks. Users can create, watch, edit and delete tasks. The project had to follow a given structure from a GitHub repository from which I had to branch. It forced me to use the Model - View - Controller structure, but over all, the most challenging for me was to understand what the given files were doing. The views use TailwindCSS and I had to follow the GitFlow structure.
+
+Below you can see the readme that we were given initially:
+
+# Initial readme
 Main structure of php project. Folders / files:
 - **app**
   - **controllers**
