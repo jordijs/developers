@@ -6,8 +6,10 @@
  */
 class ApplicationController extends Controller 
 {
-	public function index()
+	/*public function indexAction()
     {
         echo 'ApplicationController/index';
-    }
+    }*/
+
+    
 }
